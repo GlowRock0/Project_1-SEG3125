@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Oasis Landscaping</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- /Project_1-SEG3125.github.io/ -->
     <link href="/Project_1-SEG3125.github.io/styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 6;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success" style="z-index: 6;">
         <a class="navbar-brand" href="#">Green Oasis Landscaping</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,13 +59,13 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <h1 style="transform: translate(0px, -600px); color: white">Welcome to Green Oasis Landscaping!</h1>
-        <p style="transform: translate(0px, -600px); color: white">Your dream landscape is just a call away</p>
+        <h1 style="transform: translate(0px, -600px); color: white; text-shadow: 2px 2px black;">Welcome to Green Oasis Landscaping</h1>
+        <h3 style="transform: translate(0px, -600px); color: white; text-shadow: 2px 2px black;">Your dream landscape is just a call away!</h3>
         <div class="contact-us">
-            Contact Us For A Free Consulation
+            <h6 style="color: white; background-color: green; border-radius: 5px; margin-left: 30vh; margin-right: 30vh; margin-bottom: 5px;">Contact Us For A Free Consulation</h6>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    Logo
+                    <img src="assets/logo.png" class="logo" alt="Logo">
                 </div>
                 <div class="col-4">
                     <p>Monday to Friday: 9am-5pm
@@ -77,126 +78,180 @@
     </div>
 
     <div id="services" class="content-section">
-        <h2>Our Services</h2>
         <div class="services-container">
             <div class="card">
-                <img src="assets/service1.jpg" class="card-img-top" alt="Service 1">
+
                 <div class="card-body">
-                    <h5 class="card-title">Service 1</h5>
-                    <p class="card-text">Description of Service 1.</p>
+                    <h5 class="card-title">Lawn Maintenance</h5>
+                    <img src="assets/service1.jpg" class="card-img-top" alt="Service 1">
+                    <p class="card-text" style="text-align: left;">
+                        Regular mowing, trimming, and edging to keep your lawn neat and healthy. </p>
+                    <p>$30</p>
+                    <button class="book-button" onclick="openAppointment1('Lawn Maintenance')">Book Now</button>
                 </div>
+               
             </div>
             <div class="card">
-                <img src="assets/service2.jpg" class="card-img-top" alt="Service 2">
-                <div class="card-body">
-                    <h5 class="card-title">Service 2</h5>
-                    <p class="card-text">Description of Service 2.</p>
+                
+                <div class="card-body"> 
+                    <h5 class="card-title">Seasonal Clean-Up</h5>
+                    <img src="assets/service2.jpg" class="card-img-top" alt="Service 2">
+                    <p class="card-text" style="text-align: left;">
+                        Removing debris, leaves, and dead plants to prepare your garden for the next season. </p>
+                    <p>$200</p>
+                    <button class="book-button" onclick="openAppointment1('Seasonal Clean-Up')">Book Now</button>
                 </div>
+                
             </div>
             <div class="card">
-                <img src="assets/service3.jpg" class="card-img-top" alt="Service 3">
-                <div class="card-body">
-                    <h5 class="card-title">Service 3</h5>
-                    <p class="card-text">Description of Service 3.</p>
+
+                <div class="card-body">    
+                    <h5 class="card-title">Irrigation Systems</h5>
+                    <img src="assets/service3.jpg" class="card-img-top" alt="Service 3">      
+                    <p class="card-text" style="text-align: left;">
+                        Installing and maintaining automated sprinkler systems for efficient water usage. </p>
+                    <p>$1,500</p>
+                    <button class="book-button" onclick="openAppointment1('Irrigation Systems')">Book Now</button>
                 </div>
+                
             </div>
             <div class="card">
-                <img src="assets/service4.jpg" class="card-img-top" alt="Service 4">
+
                 <div class="card-body">
-                    <h5 class="card-title">Service 4</h5>
-                    <p class="card-text">Description of Service 4.</p>
+                    <h5 class="card-title">Hardscaping</h5>
+                    <img src="assets/service4.jpg" class="card-img-top" alt="Service 4">
+                    <p class="card-text" style="text-align: left;">
+                        Building patios, walkways, and retaining walls with stone, brick, or concrete. </p>
+                    <p>$10/square foot</p>
+                    <button class="book-button" onclick="openAppointment1('Hardscaping')">Book Now</button>
                 </div>
+                
             </div>
             <div class="card">
-                <img src="assets/service5.jpg" class="card-img-top" alt="Service 5">
+
                 <div class="card-body">
-                    <h5 class="card-title">Service 5</h5>
-                    <p class="card-text">Description of Service 5.</p>
+                    <h5 class="card-title">Tree and Shrub Care</h5>
+                    <img src="assets/service5.jpg" class="card-img-top" alt="Service 5">
+                    <p class="card-text" style="text-align: left;">
+                        Pruning, trimming, and treating trees and shrubs to promote health and growth. </p>
+                    <p>$150</p>
+                    <button class="book-button" onclick="openAppointment1('Tree and Shrub Care')">Book Now</button>
                 </div>
+                
             </div>
             <div class="card">
-                <img src="assets/service6.jpg" class="card-img-top" alt="Service 6">
+
                 <div class="card-body">
-                    <h5 class="card-title">Service 6</h5>
-                    <p class="card-text">Description of Service 6.</p>
+                    <h5 class="card-title">Landscape Lighting</h5>
+                    <img src="assets/service6.jpg" class="card-img-top" alt="Service 6">
+                    <p class="card-text" style="text-align: left;">
+                        Installing outdoor lighting to highlight landscape features and enhance safety and security. </p>
+                    <p>$100</p>
+                    <button class="book-button" onclick="openAppointment1('Landscape Lighting')">Book Now</button>
                 </div>
+                
             </div>
             <div class="card">
-                <img src="assets/service7.jpg" class="card-img-top" alt="Service 7">
+
                 <div class="card-body">
-                    <h5 class="card-title">Service 7</h5>
-                    <p class="card-text">Description of Service 7.</p>
+                    <h5 class="card-title">Garden Design and Installation</h5>
+                    <img src="assets/service7.jpg" class="card-img-top" alt="Service 7">
+                    <p class="card-text" style="text-align: left;">
+                        Designing and planting flower beds, shrubs, and trees to enhance your landscape’s aesthetic appeal. </p>
+                        <p>$50</p>
+                        <button class="book-button" onclick="openAppointment1('Garden Design and Installation')">Book Now</button>
                 </div>
+                
             </div>
         </div>
     </div>
 
     <div id="experts" class="content-section">
-        <h2>Meet Our Experts</h2>
         <div class="experts-container">
             <div class="card">
-                <img src="assets/expert1.jpg" class="card-img-top" alt="Expert 1">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 1</h5>
-                    <p class="card-text">Description of expert 1.</p>
+                    <h5 class="card-title">Sarah Greenfield</h5>
+                    <h6 class="card-title">Landscape Architect</h6>
+                    <img src="assets/expert1.jpg" class="card-img-top" alt="Expert 1">
+                    <p class="card-text">"Designs aesthetically pleasing and functional outdoor spaces, blending creativity with sustainability."</p>
+                    <button class="book-button" onclick="openAppointment2('Sarah Greenfield')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert2.jpg" class="card-img-top" alt="Expert 2">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 2</h5>
-                    <p class="card-text">Description of expert 2.</p>
+                    <h5 class="card-title">Mike Lawson</h5>
+                    <h6 class="card-title">Irrigation Specialist</h6>
+                    <img src="assets/expert2.jpg" class="card-img-top" alt="Expert 2">
+                    <p class="card-text">"Expert in installing and optimizing irrigation systems for efficient water use in gardens and lawns."</p>
+                    <button class="book-button" onclick="openAppointment2('Mike Lawson')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert3.jpg" class="card-img-top" alt="Expert 3">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 3</h5>
-                    <p class="card-text">Description of expert 3.</p>
+                    <h5 class="card-title">Emily Carter</h5>
+                    <h6 class="card-title">Hardscaping Designer</h6>
+                    <img src="assets/expert3.jpg" class="card-img-top" alt="Expert 3">
+                    <p class="card-text">"Creates stunning patios, walkways, and retaining walls, using a variety of materials to enhance outdoor spaces."</p>
+                    <button class="book-button" onclick="openAppointment2('Emily Carter')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert4.jpg" class="card-img-top" alt="Expert 4">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 4</h5>
-                    <p class="card-text">Description of expert 4.</p>
+                    <h5 class="card-title">John Matthews</h5>
+                    <h6 class="card-title">Tree Surgeon</h6>
+                    <img src="assets/expert4.jpg" class="card-img-top" alt="Expert 4">
+                    <p class="card-text">"Specializes in the health and maintenance of trees, offering pruning, trimming, and disease treatment."</p>
+                    <button class="book-button" onclick="openAppointment2('John Matthews')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert5.jpg" class="card-img-top" alt="Expert 5">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 5</h5>
-                    <p class="card-text">Description of expert 5.</p>
+                    <h5 class="card-title">Linda Roberts</h5>
+                    <h6 class="card-title">Garden Designer</h6>
+                    <img src="assets/expert5.jpg" class="card-img-top" alt="Expert 5">
+                    <p class="card-text">"Designs and installs beautiful garden layouts, incorporating flowers, shrubs, and decorative elements."</p>
+                    <button class="book-button" onclick="openAppointment2('Linda Roberts')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert6.jpg" class="card-img-top" alt="Expert 6">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 6</h5>
-                    <p class="card-text">Description of expert 6.</p>
+                    <h5 class="card-title">James Thompson</h5>
+                    <h6 class="card-title">Landscape Lighting Technician</h6>
+                    <img src="assets/expert6.jpg" class="card-img-top" alt="Expert 6">
+                    <p class="card-text">"Installs and maintains outdoor lighting systems, highlighting landscape features while enhancing security."</p>
+                    <button class="book-button" onclick="openAppointment2('James Thompson')">Book Now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/expert7.jpg" class="card-img-top" alt="Expert 7">
+                
                 <div class="card-body">
-                    <h5 class="card-title">expert 7</h5>
-                    <p class="card-text">Description of expert 7.</p>
+                    <h5 class="card-title">Rachel Hayes</h5>
+                    <h6 class="card-title">Seasonal Maintenance Expert</h6>
+                    <img src="assets/expert7.jpg" class="card-img-top" alt="Expert 7">
+                    <p class="card-text">"Provides comprehensive clean-up services, preparing gardens for each new season with efficiency and care."</p>
+                    <button class="book-button" onclick="openAppointment2('Rachel Hayes')">Book Now</button>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="appointment" class="content-section">
-        <h2>Book an Appointment</h2>
-        <form class="appointment-form" id="appointmentForm" style="transform: translate(0px, 50px);">
+        <h2 style="color: white; text-shadow: 2px 2px black; transform: translate(0px, 20px);">Book an Appointment</h2>
+        <form class="appointment-form" id="appointmentForm" style="transform: translate(0px, 10px);">
             <!-- Row for First and Last Name -->
             <div class="form-row">
                 <div class="form-group">
-                    <label for="firstName">First Name</label>
+                    <label for="firstName" style="color: white; text-shadow: 2px 2px black;">First Name</label>
                     <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
                 </div>
                 <div class="form-group">
-                    <label for="lastName">Last Name</label>
+                    <label for="lastName" style="color: white; text-shadow: 2px 2px black;">Last Name</label>
                     <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
                 </div>
             </div>
@@ -204,11 +259,11 @@
             <!-- Row for Email and Phone Number -->
             <div class="form-row">
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email" style="color: white; text-shadow: 2px 2px black;">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone" style="color: white; text-shadow: 2px 2px black;">Phone Number</label>
                     <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
                 </div>
             </div>
@@ -216,29 +271,29 @@
             <!-- Row for Service and Expert -->
             <div class="form-row">
                 <div class="form-group">
-                    <label for="serviceSelect">Service</label>
+                    <label for="serviceSelect" style="color: white; text-shadow: 2px 2px black;">Service</label>
                     <select class="form-control" id="serviceSelect">
                         <!-- Populate services dynamically or add static options -->
-                        <option value="service1">Service 1</option>
-                        <option value="service2">Service 2</option>
-                        <option value="service3">Service 3</option>
-                        <option value="service4">Service 4</option>
-                        <option value="service5">Service 5</option>
-                        <option value="service6">Service 6</option>
-                        <option value="service7">Service 7</option>
+                        <option value="Lawn Maintenance">Lawn Maintenance</option>
+                        <option value="Seasonal Clean-Up">Seasonal Clean-Up</option>
+                        <option value="Irrigation Systems">Irrigation Systems</option>
+                        <option value="Hardscaping">Hardscaping</option>
+                        <option value="Tree and Shrub Care">Tree and Shrub Care</option>
+                        <option value="Landscape Lighting">Landscape Lighting</option>
+                        <option value="Garden Design and Installation">Garden Design and Installation</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="expertSelect">Expert</label>
+                    <label for="expertSelect" style="color: white; text-shadow: 2px 2px black;">Expert</label>
                     <select class="form-control" id="expertSelect">
                         <!-- Populate experts dynamically or add static options -->
-                        <option value="expert1">Expert 1</option>
-                        <option value="expert2">Expert 2</option>
-                        <option value="expert3">Expert 3</option>
-                        <option value="expert4">Expert 4</option>
-                        <option value="expert5">Expert 5</option>
-                        <option value="expert6">Expert 6</option>
-                        <option value="expert7">Expert 7</option>
+                        <option value="Sarah Greenfield">Sarah Greenfield</option>
+                        <option value="Mike Lawson">Mike Lawson</option>
+                        <option value="Emily Carter">Emily Carter</option>
+                        <option value="John Matthews">John Matthews</option>
+                        <option value="Linda Roberts">Linda Roberts</option>
+                        <option value="James Thompson">James Thompson</option>
+                        <option value="Rachel Hayes">Rachel Hayes</option>
                     </select>
                 </div>
             </div>
@@ -246,13 +301,13 @@
             <!-- Row for Year, Month, Date, and Time -->
             <div class="form-row">
                 <div class="form-group">
-                    <label for="yearSelect">Year</label>
+                    <label for="yearSelect" style="color: white; text-shadow: 2px 2px black;">Year</label>
                     <select class="form-control" id="yearSelect">
                         <!-- Populate years dynamically -->
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="monthSelect">Month</label>
+                    <label for="monthSelect" style="color: white; text-shadow: 2px 2px black;">Month</label>
                     <select class="form-control" id="monthSelect">
                         <!-- Populate months dynamically -->
                         <option value="1">January</option>
@@ -270,13 +325,13 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="dateSelect">Date</label>
+                    <label for="dateSelect" style="color: white; text-shadow: 2px 2px black;">Date</label>
                     <select class="form-control" id="dateSelect">
                         <!-- Populate dates dynamically -->
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="timeSelect">Time</label>
+                    <label for="timeSelect" style="color: white; text-shadow: 2px 2px black;">Time</label>
                     <select class="form-control" id="timeSelect">
                         <!-- Populate times dynamically -->
                         <option value="09:00">09:00 AM</option>
@@ -292,13 +347,14 @@
                 </div>
             </div>
         </form>
-        <button type="submit" class="btn btn-primary" onClick="validateForm()" style="transform: translate(0px, 50px);">Book Appointment</button>
-        <div id="alertContainer" style="transform: translate(0px, 75px);"></div>
+        <button type="submit" class="book-button" onClick="validateForm()" style="transform: translate(0px, 40px);">Book Appointment</button>
+        <div id="alertContainer" style="transform: translate(0px, 60px); margin-left: 40vh; margin-right: 40vh;"></div>
     </div>    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- /Project_1-SEG3125.github.io/ -->
     <script src="/Project_1-SEG3125.github.io/scripts.js"></script>
 </body>
 </html>

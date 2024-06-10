@@ -90,3 +90,29 @@ function validateForm() {
         alert('Appointment booked successfully!');
     }
 }
+
+function openAppointment1(serviceName) {
+    // Show the appointment section
+    showSection('appointment');
+
+    // Preselect the service in the appointment form
+    const serviceInput = document.getElementById('serviceSelect');
+    Array.from(serviceInput.options).forEach(option => {
+        if (option.value === serviceName) {
+            option.selected = true;
+        }
+    });
+}
+
+function openAppointment2(expertName) {
+    // Show the appointment section
+    showSection('appointment');
+
+    // Preselect the service in the appointment form
+    const expertInput = document.getElementById('expertSelect');
+    Array.from(expertInput.options).forEach(option => {
+        if (option.value === expertName) {
+            option.selected = true;
+        }
+    });
+}

@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
-    background-color: lightgray;
+    background-color: lightgreen;
     overflow: hidden;
 }
 
@@ -12,9 +12,9 @@ html, body {
 
 #home {
     background-size: cover;
-    color: black;
-    height: 100vh; /* Full viewport height */
-    display: hidden;
+    color: white;
+    height: 100vh;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,13 +23,48 @@ html, body {
     z-index: 0;
 }
 
-#services, #experts, #appointment {
-    background-color: #f9f9f9;
+#appointment {
+    background-image: url('assets/appointment-bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+#experts {
+    background-image: url('assets/experts-bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#services {
+    background-image: url('assets/services-bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 h1, h2 {
@@ -73,22 +108,25 @@ h1, h2 {
 }
 
 .contact-us {
-    color: white;
+    color: black;
     transform: translate(0px, -250px); 
-    background-color: blue;
+    background-color: lightgreen;
     border-radius: 25px;
     align-content: center;
+    height: 110px;
     margin-left: 60vh;
     margin-right: 60vh;
+    padding-top: 10px;
 }
 
 .services-container {
     display: flex;
     overflow-x: auto;
     padding: 20px 0;
-    margin-right: 40vh;
-    margin-left: 40vh;
-    transform: translate(0px, 75px); 
+    margin-right: 30vh;
+    margin-left: 30vh;
+    transform: translate(0px, 20px); 
+    z-index: 5;
 }
 
 .services-container::-webkit-scrollbar {
@@ -96,21 +134,22 @@ h1, h2 {
 }
 
 .services-container::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: green;
     border-radius: 10px;
 }
 
 .services-container::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: darkgreen;
 }
 
 .experts-container {
     display: flex;
     overflow-x: auto;
     padding: 20px 0;
-    margin-right: 40vh;
-    margin-left: 40vh;
-    transform: translate(0px, 75px); 
+    margin-right: 30vh;
+    margin-left: 30vh;
+    transform: translate(0px, 20px); 
+    z-index: 5;
 }
 
 .experts-container::-webkit-scrollbar {
@@ -118,23 +157,27 @@ h1, h2 {
 }
 
 .experts-container::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: green;
     border-radius: 10px;
 }
 
 .experts-container::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: darkgreen;
 }
 
 .card {
     flex: 0 0 auto;
     margin: 0 15px;
     width: 300px;
+    color:black;
+    background-color: lightgreen;
+    padding: 20px;
 }
 
 .card img {
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .appointment-form {
@@ -165,4 +208,26 @@ h1, h2 {
     width: auto;
     display: inline-block;
     max-width: 200px;
+    background-color: lightgreen;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-custom {
+    background-color: lightgreen; /* Change this to your desired color */
+}
+
+.book-button {
+    background-color: green; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
 }
